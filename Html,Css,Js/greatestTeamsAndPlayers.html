@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>World Cup</title>
+        <link href="style.css" rel="stylesheet"> <!--Link to the css-->
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&display=swap" rel="stylesheet"> <!--link for the font-->
+
+    </head>
+    <body>
+        <main>
+            <!--navigation for the different pages-->
+            <nav class="navigation">
+                <ul>
+                    <li class="green"><a href="/index.html">Home Page</a></li>
+                    <li class="darkgreen"><a href="/Html,Css,Js/greatestTeamsAndPlayers.html">Greatest Teams and Players</a></li>
+                    <li class="green"><a href="/Html,Css,Js/Search.html">Search</a></li>
+                </ul>
+            </nav>
+            <!--Sections for the greatest teams-->
+            <section id="GreatestTeams">
+                <h1>Greatest Teams</h1>
+                <div id="Teams">
+                    <!--The onclick attribute will execute a function on the javascript-->
+                    <figure class="Brazil" onclick="getInformation('Brazil')">
+                        <img src="/Images/Brazil.png" alt="Brazil flag">
+                        <figcaption>Brazil</figcaption>
+                    </figure>
+                    <figure class="Germany" onclick="getInformation('Germany')">
+                        <img src="/Images/Germany.png" alt="Germany;s flag">
+                        <figcaption>Germany</figcaption>
+                    </figure>
+                    <figure class="Italy" onclick="getInformation('Italy')">
+                        <img src="/Images/Italy.png" alt="Italy's flag">
+                        <figcaption>Italy</figcaption>
+                    </figure>
+                    <figure class="Argentina" onclick="getInformation('Argentina')">
+                        <img src="/Images/Argentina.png" alt="Argentina's flag">
+                        <figcaption>Argentina</figcaption>
+                    </figure>
+                    <figure class="France" onclick="getInformation('France')">
+                        <img src="/Images/France.png" alt="Frances's flag">
+                        <figcaption>France</figcaption>
+                    </figure>
+                    <figure class="Uruguay" onclick="getInformation('Uruguay')">
+                        <img src="/Images/Uruguay.png" alt="Uruguay's flag">
+                        <figcaption>Uruguay</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <!--Section for the greatest Players-->
+            <section id="GreatestPlayers">
+                <h1>Greatest Players</h1>
+                <div id="players">
+                    <figure class="plyr">
+                        <img src="/Images/Klose.png" onclick="getInformation('Klose')">
+                        <figcaption>Miroslav Klose (Alemania)</figcaption>
+                    </figure>
+                    <figure class="plyr" onclick="getInformation('Pele')">
+                        <img src="/Images/Pele.png">
+                        <figcaption>Pelé (Brazil)</figcaption>
+                    </figure>
+                    <figure class="plyr" onclick="getInformation('Maradona')">
+                        <img src="/Images/Maradona.png">
+                        <figcaption>Maradona (Argentina)</figcaption>
+                    </figure>
+                    <figure class="plyr" onclick="getInformation('Nazario')">
+                        <img src="/Images/Nazario.png">
+                        <figcaption>Ronaldo Nazario (Brazil)</figcaption>
+                    </figure>
+                    <figure class="plyr">
+                        <img src="/Images/Zidane.png" onclick="getInformation('Zidane')">
+                        <figcaption>Zinedine ZIdane (France)</figcaption>
+                    </figure>
+    
+            </section>
+            <!--div for the invisible container-->
+            <div id="InformationContainer" class="hidden">
+                <button class="Btns" onclick="last()">&lt</button>
+                <div id="Info">
+                    <img id="imgInfo" src="">
+                    <p id="textInfo"></p>
+                </div>
+                <button class="Btns" onclick="next()">&gt</button>
+            </div>
+        </main>
+        <footer>
+            <!--Navigation to the different sections of the page-->
+            <nav class="navigation">
+                <ul>
+                    
+                    <li class="green"><a href='#GreatestTeams'>Greatest Teams</a></li>
+                    <li class="darkgreen"><a href="#GreatestPlayers">Greatest Players</a></li>
+                </ul>
+            </nav>
+            <!--Link to the js-->
+            <script src="script.js"></script>
+        </footer>
+    </body>

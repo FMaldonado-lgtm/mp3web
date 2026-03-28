@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>World Cup</title>
+        <link href="style.css" rel="stylesheet"><!--Link to the css-->
+        <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;700&display=swap" rel="stylesheet"> <!--Link to the font-->
+
+    </head>
+    <body>
+        <main>
+            <nav class="navigation">
+                <ul>
+                    <!--A nav for the different pages-->
+                    <li class="green"><a href="/index.html">Home Page</a></li>
+                    <li class="darkgreen"><a href="/Html,Css,Js/greatestTeamsAndPlayers.html">Greatest Teams and Players</a></li>
+                    <li class="green"><a href="/Html,Css,Js/Search.html">Search</a></li>
+                </ul>
+            </nav>
+            <!--Section for the search-->
+            <section id="Search">
+                <h1>Search for a winner !!</h1>
+                <div id="SearchContainer">
+                    <div id="SearchPart">
+                        <div id="SelectYear">
+                            <label for="year"><h2>Select the year :</h2></label>
+                            <!--Select element with the different years and with values for the js-->
+                            <select name="year" id="yearl"> 
+                                <option value="" selected disabled>Years</option>
+                                <option value="1930">1930</option>
+                                <option value="1934">1934</option>
+                                <option value="1938">1938</option>
+                                <option value="1950">1950</option>
+                                <option value="1954">1954</option>
+                                <option value="1958">1958</option>
+                                <option value="1962">1962</option>
+                                <option value="1966">1966</option>
+                                <option value="1970">1970</option>
+                                <option value="1974">1974</option>
+                                <option value="1982">1982</option>
+                                <option value="1986">1986</option>
+                                <option value="1990">1990</option>
+                                <option value="1994">1994</option>
+                                <option value="1998">1998</option>
+                                <option value="2002">2002</option>
+                                <option value="2006">2006</option>
+                                <option value="2010">2010</option>
+                                <option value="2014">2014</option>
+                                <option value="2018">2018</option>
+                                <option value="2022">2022</option>
+                            </select>
+                        </div>
+                        <div id="WorldCupInfo">
+                            <h3 id="yearAndSite"></h3>
+                            <p id="yearInfo">Information...</p>
+                        </div>
+                    </div>
+                    <div id="video">
+                        <p>Current News about the <a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026">World Cup</a></p>
+                        <!--an element to have a video of youtube-->
+                        <iframe src="https://www.youtube.com/embed/7n_msmqWCN0?si=j1VIYn6i_Nvokvjx" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <!--Link to the js-->
+            <script src="script.js"></script>
+        </footer>
+    </body>
